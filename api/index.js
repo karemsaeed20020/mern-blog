@@ -1,7 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import userRoutes from '../api/routes/user.route.js'
+import userRoutes from '../api/routes/user.route.js';
+import authRoutes from '../api/routes/auth.route.js';
 dotenv.config();
 
 const app = express();
@@ -17,4 +18,5 @@ app.listen('4000', () => {
     console.log('Server is running on port 4000!');
 })
 
-app.use('/api/user', userRoutes)
+app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
