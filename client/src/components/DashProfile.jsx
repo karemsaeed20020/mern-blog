@@ -19,8 +19,6 @@ const DashProfile = () => {
     const [imageFileUploadProgress, setImageFileUploadProgress] = useState(null);
     const [imageFileUploadError, setImageFileUploadError] = useState(null);
     const [imageFileUploading, setImageFileUploading] = useState(false);
-    const [updateUserSuccess, setUpdateUserSuccess] = useState(null);
-    const [updateUserError, setUpdateUserError] = useState(null);
     const [formData, setFormData] = useState({});
     console.log(imageFileUploadProgress, imageFileUploadError);
 
