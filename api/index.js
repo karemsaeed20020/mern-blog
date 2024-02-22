@@ -3,10 +3,12 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import userRoutes from '../api/routes/user.route.js';
 import authRoutes from '../api/routes/auth.route.js';
+import cookieParser from 'cookie-parser';
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cookieParser());
 mongoose.connect(process.env.MONGO).then(() => {
     console.log("MongoDb is Connected");
 }).catch((err) => {
