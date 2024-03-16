@@ -50,7 +50,7 @@ const Header = () => {
   return (
     <Navbar className="border-b-2">
       <Link to={'/'} className="self-center dark:text-white whitespace-nowrap text-sm sm:text-xl font-semibold">
-        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg">Kareem</span>
+        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg">Online</span>
         Blog
       </Link>
       <form onSubmit={handleSubmit}>
